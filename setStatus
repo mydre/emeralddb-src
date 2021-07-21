@@ -1,0 +1,36 @@
+./boost/coroutine2/detail/push_control_block_cc.ipp:36:    boost::context::fiber c = std::move( cb->c);
+./boost/coroutine2/detail/push_control_block_cc.ipp:38:    cb->~control_block();
+./boost/coroutine2/detail/push_control_block_cc.ipp:40:    cb->state |= state_t::destroy;
+./boost/coroutine2/detail/push_control_block_cc.ipp:167:    boost::context::fiber c = std::move( cb->c);
+./boost/coroutine2/detail/push_control_block_cc.ipp:169:    cb->~control_block();
+./boost/coroutine2/detail/push_control_block_cc.ipp:171:    cb->state |= state_t::destroy;
+./boost/coroutine2/detail/push_control_block_cc.ipp:287:    boost::context::fiber c = std::move( cb->c);
+./boost/coroutine2/detail/push_control_block_cc.ipp:289:    cb->~control_block();
+./boost/coroutine2/detail/push_control_block_cc.ipp:291:    cb->state |= state_t::destroy;
+./boost/coroutine2/detail/pull_control_block_cc.ipp:37:    boost::context::fiber c = std::move( cb->c);
+./boost/coroutine2/detail/pull_control_block_cc.ipp:39:    cb->~control_block();
+./boost/coroutine2/detail/pull_control_block_cc.ipp:41:    cb->state |= state_t::destroy;
+./boost/coroutine2/detail/pull_control_block_cc.ipp:193:    boost::context::fiber c = std::move( cb->c);
+./boost/coroutine2/detail/pull_control_block_cc.ipp:195:    cb->~control_block();
+./boost/coroutine2/detail/pull_control_block_cc.ipp:197:    cb->state |= state_t::destroy;
+./boost/coroutine2/detail/pull_control_block_cc.ipp:326:    boost::context::fiber c = std::move( cb->c);
+./boost/coroutine2/detail/pull_control_block_cc.ipp:328:    cb->~control_block();
+./boost/coroutine2/detail/pull_control_block_cc.ipp:330:    cb->state |= state_t::destroy;
+./pmd/pmdEDUMgr.cpp:253:      type = educb->getType() ;
+./pmd/pmdEDUMgr.cpp:388:   cb->setStatus ( PMD_EDU_CREATING ) ;
+./pmd/pmdEDUMgr.cpp:409:   cb->setID ( _EDUID ) ;
+./pmd/pmdEDUMgr.cpp:437:   cb->postEvent( pmdEDUEvent( PMD_EDU_EVENT_RESUME, false, arg ) ) ;//激活一个事件，把参数发进去
+./pmd/pmdEDU.cpp:105:      if ( cb->isForced () )
+./pmd/pmdEDU.cpp:126:      if ( cb->isForced () )
+./pmd/pmdEDU.cpp:143:	EDUID myEDUID = cb->getID();
+./pmd/pmdEDU.cpp:144:	pmdEDUMgr *eduMgr = cb->getEDUMgr();
+./pmd/pmdEDU.cpp:150:		type  = cb->getType();
+./pmd/pmdEDU.cpp:152:		if(!cb->waitEvent(event,1000)){
+./pmd/pmdEDU.cpp:153:			if(cb->isForced()){
+./pmd/pmdEDU.cpp:175:				if(isSystemEDU(cb->getType())){
+./pmd/pmdEDU.cpp:187:		}else if(isForced && PMD_EDU_EVENT_TERM == event._eventType && cb->isForced()){
+./pmd/pmdAgent.cpp:63:   EDUID myEDUID         = cb->getID () ;
+./pmd/pmdAgent.cpp:64:   pmdEDUMgr *eduMgr     = cb->getEDUMgr() ;
+./pmd/pmdMain.cpp:168:   pmdEDUMgr *eduMgr = krcb->getEDUMgr();
+./pmd/pmdTcpListener.cpp:30:   pmdEDUMgr *  eduMgr    = cb->getEDUMgr() ;
+./pmd/pmdTcpListener.cpp:31:   EDUID        myEDUID   = cb->getID() ;
